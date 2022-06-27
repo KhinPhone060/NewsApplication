@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F722C33A2868BA8100DA08BD /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722C3382868BA8100DA08BD /* NewsTableViewCell.swift */; };
+		F722C33B2868BA8100DA08BD /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F722C3392868BA8100DA08BD /* NewsTableViewCell.xib */; };
 		F75CE3A12867222600F340E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75CE3A02867222600F340E1 /* AppDelegate.swift */; };
-		F75CE3A32867222600F340E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75CE3A22867222600F340E1 /* SceneDelegate.swift */; };
 		F75CE3A52867222600F340E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75CE3A42867222600F340E1 /* ViewController.swift */; };
 		F75CE3A82867222600F340E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75CE3A62867222600F340E1 /* Main.storyboard */; };
 		F75CE3AA2867222700F340E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75CE3A92867222700F340E1 /* Assets.xcassets */; };
@@ -16,9 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F722C3382868BA8100DA08BD /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		F722C3392868BA8100DA08BD /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		F75CE39D2867222600F340E1 /* NewsApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75CE3A02867222600F340E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F75CE3A22867222600F340E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F75CE3A42867222600F340E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F75CE3A72867222600F340E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F75CE3A92867222700F340E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,12 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				F75CE3A02867222600F340E1 /* AppDelegate.swift */,
-				F75CE3A22867222600F340E1 /* SceneDelegate.swift */,
 				F75CE3A42867222600F340E1 /* ViewController.swift */,
 				F75CE3A62867222600F340E1 /* Main.storyboard */,
 				F75CE3A92867222700F340E1 /* Assets.xcassets */,
 				F75CE3AB2867222700F340E1 /* LaunchScreen.storyboard */,
 				F75CE3AE2867222700F340E1 /* Info.plist */,
+				F722C3382868BA8100DA08BD /* NewsTableViewCell.swift */,
+				F722C3392868BA8100DA08BD /* NewsTableViewCell.xib */,
 			);
 			path = NewsApplication;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			files = (
 				F75CE3AD2867222700F340E1 /* LaunchScreen.storyboard in Resources */,
 				F75CE3AA2867222700F340E1 /* Assets.xcassets in Resources */,
+				F722C33B2868BA8100DA08BD /* NewsTableViewCell.xib in Resources */,
 				F75CE3A82867222600F340E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +144,7 @@
 			files = (
 				F75CE3A52867222600F340E1 /* ViewController.swift in Sources */,
 				F75CE3A12867222600F340E1 /* AppDelegate.swift in Sources */,
-				F75CE3A32867222600F340E1 /* SceneDelegate.swift in Sources */,
+				F722C33A2868BA8100DA08BD /* NewsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
