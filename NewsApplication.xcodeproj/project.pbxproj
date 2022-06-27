@@ -16,6 +16,8 @@
 		F75CE3A82867222600F340E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75CE3A62867222600F340E1 /* Main.storyboard */; };
 		F75CE3AA2867222700F340E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75CE3A92867222700F340E1 /* Assets.xcassets */; };
 		F75CE3AD2867222700F340E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75CE3AB2867222700F340E1 /* LaunchScreen.storyboard */; };
+		F7CC7E762869B29A00B1DE5C /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CC7E752869B29A00B1DE5C /* NewsService.swift */; };
+		F7CE3C072869B57900E23F4F /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CE3C062869B57900E23F4F /* News.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		F75CE3A92867222700F340E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F75CE3AC2867222700F340E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F75CE3AE2867222700F340E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7CC7E752869B29A00B1DE5C /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+		F7CE3C062869B57900E23F4F /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		FC4EEE94CA0998200A520E43 /* Pods_NewsApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -60,7 +64,6 @@
 				922F2667D33187535A550AD2 /* Pods-NewsApplication.debug.xcconfig */,
 				7176A36CB89B1F4F3932E93C /* Pods-NewsApplication.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -94,6 +97,8 @@
 				F722C3382868BA8100DA08BD /* NewsTableViewCell.swift */,
 				F722C3392868BA8100DA08BD /* NewsTableViewCell.xib */,
 				F726005A2869AA5F0088C975 /* NewsDetailViewController.swift */,
+				F7CC7E752869B29A00B1DE5C /* NewsService.swift */,
+				F7CE3C062869B57900E23F4F /* News.swift */,
 			);
 			path = NewsApplication;
 			sourceTree = "<group>";
@@ -214,6 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7CE3C072869B57900E23F4F /* News.swift in Sources */,
+				F7CC7E762869B29A00B1DE5C /* NewsService.swift in Sources */,
 				F726005B2869AA5F0088C975 /* NewsDetailViewController.swift in Sources */,
 				F75CE3A52867222600F340E1 /* ViewController.swift in Sources */,
 				F75CE3A12867222600F340E1 /* AppDelegate.swift in Sources */,
@@ -374,6 +381,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,6 +410,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

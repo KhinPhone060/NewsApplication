@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NewsTableViewCell: UITableViewCell {
+final class NewsTableViewCell: UITableViewCell {
 
     @IBOutlet var logoImageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
@@ -18,10 +18,12 @@ class NewsTableViewCell: UITableViewCell {
         super.awakeFromNib()
         containerView.layer.cornerRadius = 10
         containerView.layer.masksToBounds = true
-        
+    }
+    
+    func configCell(news: News) {
         logoImageView.image = UIImage(named: "download")
-        titleLabel.text = "Breaking News"
-        descLabel.text = "Description"
+        titleLabel.text = news.title
+        descLabel.text = news.description
     }
     
 }
