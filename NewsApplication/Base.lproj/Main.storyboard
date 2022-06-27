@@ -16,39 +16,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wGp-LT-wbz">
-                                <rect key="frame" x="18" y="44" width="378" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="sectionIndexBackgroundColor" systemColor="systemGray4Color"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wGp-LT-wbz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wGp-LT-wbz" secondAttribute="bottom" id="1yI-6m-lGM"/>
-                            <constraint firstItem="wGp-LT-wbz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RVG-xS-SBs"/>
-                            <constraint firstItem="wGp-LT-wbz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="ds5-sy-7Kh"/>
-                            <constraint firstItem="wGp-LT-wbz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kdY-Cx-74X"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wGp-LT-wbz" secondAttribute="trailing" id="lZR-DH-KwM"/>
-                            <constraint firstItem="wGp-LT-wbz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="oM9-cB-DxL"/>
-                            <constraint firstItem="wGp-LT-wbz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-18" id="uDp-jh-Ewe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wGp-LT-wbz" secondAttribute="trailing" id="80i-82-eL5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wGp-LT-wbz" secondAttribute="bottom" id="QT8-Uh-sGB"/>
+                            <constraint firstItem="wGp-LT-wbz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kFC-aH-bcz"/>
+                            <constraint firstItem="wGp-LT-wbz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zVP-T1-3wm"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="newsTableView" destination="wGp-LT-wbz" id="F5Z-qB-j8d"/>
+                        <segue destination="1lJ-IP-dQM" kind="showDetail" identifier="showNewsDetail" id="UZ2-aD-aEe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="66.964285714285708"/>
         </scene>
+        <!--News Detail View Controller-->
+        <scene sceneID="1I1-Vq-92C">
+            <objects>
+                <viewController id="1lJ-IP-dQM" customClass="NewsDetailViewController" customModule="NewsApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="psz-bd-ArQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="L4h-nX-cLX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w1v-TH-gXW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="67"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
