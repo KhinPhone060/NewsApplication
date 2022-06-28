@@ -9,6 +9,7 @@ import Foundation
 import Alamofire
 import ObjectMapper
 
+//Add NewsService layer
 final class NewsService {
     func fetchNews(completionHandler: @escaping (_ newslist: [News]) -> Void) {
         let url = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=5c9bb4e194434ab281fb1b329fad774d"
