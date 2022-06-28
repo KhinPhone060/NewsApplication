@@ -9,6 +9,13 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let targetVC = segue.destination as? NewsDetailViewController,
+           let news = sender as? News {
+            targetVC.news = news
+        }
+    }
+    
     @IBOutlet var newsTableView: UITableView!
     var newsList = [News]()
     override func viewDidLoad() {
@@ -42,10 +49,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return tableView.estimatedRowHeight
+        return 100
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showNewsDetail", sender: self)
+        if newsList.count > 0 {
+            let news = newsList[indexPath.row]
+            performSegue(withIdentifier: "showNewsDetail", sender: news)
+        }
     }
 }
 

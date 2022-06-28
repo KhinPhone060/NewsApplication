@@ -21,7 +21,8 @@ final class NewsTableViewCell: UITableViewCell {
     }
     
     func configCell(news: News) {
-        logoImageView.image = UIImage(named: "download")
+        let url = URL(string: news.imageURL ?? "")
+        logoImageView.kf.setImage(with: url)
         titleLabel.text = news.title
         descLabel.text = news.description
     }

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -18,7 +19,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wGp-LT-wbz">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -47,18 +48,88 @@
                     <view key="view" contentMode="scaleToFill" id="psz-bd-ArQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bva-Td-acK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news" translatesAutoresizingMaskIntoConstraints="NO" id="8ar-hO-hi2">
+                                        <rect key="frame" x="83" y="0.0" width="414" height="400"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="4am-XY-EdW"/>
+                                            <constraint firstAttribute="height" constant="400" id="CKs-ip-7JM"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efu-t4-cqY">
+                                        <rect key="frame" x="101" y="425" width="378" height="400"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="k26-Np-fBR"/>
+                                        </constraints>
+                                        <mutableString key="text">The following article (which can be read in full on the News site) is, in many ways, a ‘typical’ Imperial research story. Take a look through the News site and you will see many structured just like it.
+
+As with many news websites, we aim for our stories to be accessible and understandable for as wide an audience as possible – from members of the public with a casual interest in science, to PhD-holding academics.
+
+So what are the hallmarks of an Imperial news story? When a researcher comes to us ready to announce some fascinating new study, how are we likely to write about it?
+
+To explain our approach to news writing, we’ve broken down the story below.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can Twitter Predict the Future?  Can Twitter Predict the Future?  Can Twitter Predict the Future? " textAlignment="justified" lineBreakMode="clip" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJz-BS-wdX">
+                                        <rect key="frame" x="101" y="300" width="378" height="85.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="380" id="AiH-f2-UGN"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="uob-5j-FIj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Cdw-mQ-i9b" firstAttribute="trailing" secondItem="jJz-BS-wdX" secondAttribute="trailing" constant="18" id="2sE-C6-cuS"/>
+                                    <constraint firstItem="8ar-hO-hi2" firstAttribute="leading" secondItem="Cdw-mQ-i9b" secondAttribute="leading" id="O4a-ku-mE1"/>
+                                    <constraint firstItem="jJz-BS-wdX" firstAttribute="top" secondItem="Cdw-mQ-i9b" secondAttribute="top" constant="300" id="QZT-rJ-gjx"/>
+                                    <constraint firstItem="jJz-BS-wdX" firstAttribute="leading" secondItem="Cdw-mQ-i9b" secondAttribute="leading" constant="18" id="R1l-xI-DMQ"/>
+                                    <constraint firstItem="8ar-hO-hi2" firstAttribute="top" secondItem="Cdw-mQ-i9b" secondAttribute="top" id="WUr-o0-C6n"/>
+                                    <constraint firstAttribute="bottom" secondItem="Efu-t4-cqY" secondAttribute="bottom" constant="17" id="YRy-g8-6jn"/>
+                                    <constraint firstAttribute="trailing" secondItem="8ar-hO-hi2" secondAttribute="trailing" id="ZEe-2O-bzQ"/>
+                                    <constraint firstItem="Efu-t4-cqY" firstAttribute="top" secondItem="8ar-hO-hi2" secondAttribute="bottom" constant="25" id="fgM-Ap-GpR"/>
+                                    <constraint firstItem="Efu-t4-cqY" firstAttribute="trailing" secondItem="jJz-BS-wdX" secondAttribute="trailing" id="ls0-OJ-nCh"/>
+                                    <constraint firstItem="Efu-t4-cqY" firstAttribute="leading" secondItem="jJz-BS-wdX" secondAttribute="leading" id="tmH-bV-uHh"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="35A-Dv-itO"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Cdw-mQ-i9b"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="L4h-nX-cLX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Bva-Td-acK" firstAttribute="top" secondItem="L4h-nX-cLX" secondAttribute="top" id="Lvb-xO-G5u"/>
+                            <constraint firstItem="Bva-Td-acK" firstAttribute="leading" secondItem="psz-bd-ArQ" secondAttribute="leading" id="QCC-Mx-X1P"/>
+                            <constraint firstAttribute="trailing" secondItem="Bva-Td-acK" secondAttribute="trailing" id="bqv-Hu-kjD"/>
+                            <constraint firstAttribute="bottom" secondItem="Bva-Td-acK" secondAttribute="bottom" id="gnZ-zi-YvH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="newsDetailContent" destination="Efu-t4-cqY" id="3hP-GQ-lr1"/>
+                        <outlet property="newsDetailImage" destination="8ar-hO-hi2" id="iGk-oR-j5N"/>
+                        <outlet property="newsDetailTitle" destination="jJz-BS-wdX" id="itQ-Kj-pzE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w1v-TH-gXW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="913" y="67"/>
+            <point key="canvasLocation" x="911.59420289855075" y="66.964285714285708"/>
         </scene>
     </scenes>
     <resources>
+        <image name="news" width="640" height="360"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
