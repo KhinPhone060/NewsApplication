@@ -13,6 +13,7 @@ class News: Mappable {
     var description: String?
     var imageURL: String?
     var content: String?
+    var url: String?
     
     required init?(map: Map) {
 
@@ -24,5 +25,6 @@ class News: Mappable {
         description <- map["description"]
         imageURL <- map["urlToImage"]
         content <- map["content"]
+        url <- map["url"]
     }
 }

@@ -53,30 +53,34 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news" translatesAutoresizingMaskIntoConstraints="NO" id="8ar-hO-hi2">
-                                        <rect key="frame" x="83" y="0.0" width="414" height="400"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="414" id="4am-XY-EdW"/>
                                             <constraint firstAttribute="height" constant="400" id="CKs-ip-7JM"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efu-t4-cqY">
-                                        <rect key="frame" x="101" y="425" width="378" height="400"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9U-ul-ySy">
+                                        <rect key="frame" x="0.0" y="405" width="414" height="440"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tY4-qe-3td">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="422"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="400" id="k26-Np-fBR"/>
+                                            <constraint firstAttribute="height" constant="440" id="4ti-nG-O3k"/>
+                                            <constraint firstAttribute="trailing" secondItem="tY4-qe-3td" secondAttribute="trailing" id="LGp-Ca-6cU"/>
+                                            <constraint firstAttribute="bottom" secondItem="tY4-qe-3td" secondAttribute="bottom" constant="18" id="M2W-NM-G0w"/>
+                                            <constraint firstItem="tY4-qe-3td" firstAttribute="leading" secondItem="M9U-ul-ySy" secondAttribute="leading" id="cET-Lf-uhp"/>
                                         </constraints>
-                                        <mutableString key="text">The following article (which can be read in full on the News site) is, in many ways, a ‘typical’ Imperial research story. Take a look through the News site and you will see many structured just like it.
-
-As with many news websites, we aim for our stories to be accessible and understandable for as wide an audience as possible – from members of the public with a casual interest in science, to PhD-holding academics.
-
-So what are the hallmarks of an Imperial news story? When a researcher comes to us ready to announce some fascinating new study, how are we likely to write about it?
-
-To explain our approach to news writing, we’ve broken down the story below.</mutableString>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can Twitter Predict the Future?  Can Twitter Predict the Future?  Can Twitter Predict the Future? " textAlignment="justified" lineBreakMode="clip" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJz-BS-wdX">
-                                        <rect key="frame" x="101" y="300" width="378" height="85.5"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can Twitter Predict the Future?  Can Twitter Predict the Future?  Can Twitter Predict the Future? " textAlignment="justified" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJz-BS-wdX">
+                                        <rect key="frame" x="18" y="300" width="378" height="85.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="380" id="AiH-f2-UGN"/>
@@ -89,15 +93,16 @@ To explain our approach to news writing, we’ve broken down the story below.</m
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Cdw-mQ-i9b" firstAttribute="trailing" secondItem="jJz-BS-wdX" secondAttribute="trailing" constant="18" id="2sE-C6-cuS"/>
+                                    <constraint firstItem="M9U-ul-ySy" firstAttribute="leading" secondItem="Bva-Td-acK" secondAttribute="leading" id="9bw-Ph-798"/>
                                     <constraint firstItem="8ar-hO-hi2" firstAttribute="leading" secondItem="Cdw-mQ-i9b" secondAttribute="leading" id="O4a-ku-mE1"/>
                                     <constraint firstItem="jJz-BS-wdX" firstAttribute="top" secondItem="Cdw-mQ-i9b" secondAttribute="top" constant="300" id="QZT-rJ-gjx"/>
                                     <constraint firstItem="jJz-BS-wdX" firstAttribute="leading" secondItem="Cdw-mQ-i9b" secondAttribute="leading" constant="18" id="R1l-xI-DMQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="M9U-ul-ySy" secondAttribute="bottom" id="RHX-hH-hym"/>
+                                    <constraint firstItem="tY4-qe-3td" firstAttribute="top" secondItem="8ar-hO-hi2" secondAttribute="bottom" constant="5" id="TVv-kc-vci"/>
+                                    <constraint firstAttribute="trailing" secondItem="M9U-ul-ySy" secondAttribute="trailing" id="TsL-LH-EQm"/>
                                     <constraint firstItem="8ar-hO-hi2" firstAttribute="top" secondItem="Cdw-mQ-i9b" secondAttribute="top" id="WUr-o0-C6n"/>
-                                    <constraint firstAttribute="bottom" secondItem="Efu-t4-cqY" secondAttribute="bottom" constant="17" id="YRy-g8-6jn"/>
                                     <constraint firstAttribute="trailing" secondItem="8ar-hO-hi2" secondAttribute="trailing" id="ZEe-2O-bzQ"/>
-                                    <constraint firstItem="Efu-t4-cqY" firstAttribute="top" secondItem="8ar-hO-hi2" secondAttribute="bottom" constant="25" id="fgM-Ap-GpR"/>
-                                    <constraint firstItem="Efu-t4-cqY" firstAttribute="trailing" secondItem="jJz-BS-wdX" secondAttribute="trailing" id="ls0-OJ-nCh"/>
-                                    <constraint firstItem="Efu-t4-cqY" firstAttribute="leading" secondItem="jJz-BS-wdX" secondAttribute="leading" id="tmH-bV-uHh"/>
+                                    <constraint firstItem="M9U-ul-ySy" firstAttribute="top" secondItem="8ar-hO-hi2" secondAttribute="bottom" constant="5" id="clT-0P-RTx"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="35A-Dv-itO"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Cdw-mQ-i9b"/>
@@ -113,9 +118,9 @@ To explain our approach to news writing, we’ve broken down the story below.</m
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="newsDetailContent" destination="Efu-t4-cqY" id="3hP-GQ-lr1"/>
                         <outlet property="newsDetailImage" destination="8ar-hO-hi2" id="iGk-oR-j5N"/>
                         <outlet property="newsDetailTitle" destination="jJz-BS-wdX" id="itQ-Kj-pzE"/>
+                        <outlet property="newsSnippetTextView" destination="tY4-qe-3td" id="CLu-pf-HfN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w1v-TH-gXW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -125,6 +130,9 @@ To explain our approach to news writing, we’ve broken down the story below.</m
     </scenes>
     <resources>
         <image name="news" width="640" height="360"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
